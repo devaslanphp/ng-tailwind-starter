@@ -1,8 +1,8 @@
 # Angular Tailwind Starter
 
-This project is based on the [`Angular Tailwind Boilerplate`](https://github.com/devaslanphp/angular-tailwind-boilerplate)
+This project is based on the [`Angular Tailwind Boilerplate`](https://github.com/devaslanphp/ng-tailwind-starter)
 
-You can check the documentation for this Boilerplate project [here](https://devaslanphp.github.io/angular-tailwind-boilerplate/)
+You can check the documentation for this Boilerplate project [here](https://devaslanphp.github.io/ng-tailwind-starter/)
 
 ## Installation
 

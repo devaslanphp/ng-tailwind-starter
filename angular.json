@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-tailwind-boilerplate": {
+    "ng-tailwind-starter": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
           "builder": "ngx-build-plus:browser",
           "options": {
             "extraWebpackConfig": "webpack.config.js",
-            "outputPath": "dist/angular-tailwind-boilerplate",
+            "outputPath": "dist/ng-tailwind-starter",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-tailwind-boilerplate:build:production"
+              "browserTarget": "ng-tailwind-starter:build:production"
             },
             "development": {
-              "browserTarget": "angular-tailwind-boilerplate:build:development"
+              "browserTarget": "ng-tailwind-starter:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "ngx-build-plus:extract-i18n",
           "options": {
-            "browserTarget": "angular-tailwind-boilerplate:build"
+            "browserTarget": "ng-tailwind-starter:build"
           }
         },
         "test": {
