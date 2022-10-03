@@ -1,0 +1,12 @@
+- [Angular Tailwind Boilerplate](/?id=angular-tailwind-boilerplate)
+  - [What's inside?](/?id=what39s-inside)
+  - [Installation](/?id=installation)
+
+- [Pages](/pages?id=pages)
+  - [Authentication](/pages?id=authentication)
+    - [Login](/pages?id=login)
+    - [Register](/pages?id=register)
+    - [Forgot password](/pages?id=forgot-password)
+    - [Recover password](/pages?id=recover-password)
+    - [Verify account](/pages?id=verify-account)
+  - [Dashboard](/pages?id=dashboard)
