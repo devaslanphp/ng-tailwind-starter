@@ -1,4 +1,4 @@
-- [Angular Tailwind Boilerplate](/?id=angular-tailwind-boilerplate)
+- [Angular Tailwind Starter](/?id=angular-tailwind-starter)
   - [What's inside?](/?id=what39s-inside)
   - [Installation](/?id=installation)
 
