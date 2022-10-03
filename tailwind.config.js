@@ -1,8 +1,21 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: ['./src/**/*.html', './src/**/*.ts'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        danger: colors.red,
+        primary: colors.blue,
+        success: colors.green,
+        warning: colors.yellow,
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('flowbite/plugin')
+  ],
 }
