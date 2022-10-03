@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import { faApple, faGoogle, faFacebookF, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,8 @@ export class LoginComponent implements OnInit {
   faGithub = faGithub;
 
   constructor(
-    private _formBuilder: FormBuilder
+    private _formBuilder: FormBuilder,
+    private _router: Router
   ) {
     this.form = this.buildForm();
   }
@@ -40,7 +42,7 @@ export class LoginComponent implements OnInit {
    * Login user
    */
   login(): void {
-
+    this._router.navigateByUrl('/');
   }
 
 }
