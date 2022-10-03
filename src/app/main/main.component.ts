@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faHome, faUser, faSignOut } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  showUserMenu: boolean;
+  faHome = faHome;
+  faUser = faUser;
+  faSignOut = faSignOut;
+
+  constructor() {
+    this.showUserMenu = false;
+  }
 
   ngOnInit() {
+  }
+
+  toggleUserMenu() {
+    this.showUserMenu = !this.showUserMenu;
   }
 
 }
