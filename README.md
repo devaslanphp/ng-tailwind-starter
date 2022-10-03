@@ -4,7 +4,7 @@ This is a starter project based on an Angular architecture and TailwindCSS for t
 
 ## Documentation
 
-You can find a full documentation here: [Documentation](https://devaslanphp.github.io/angular-tailwind-starter/)
+You can find a full documentation here: [Documentation](https://devaslanphp.github.io/ng-tailwind-starter/)
 
 ## Screenshots
 
