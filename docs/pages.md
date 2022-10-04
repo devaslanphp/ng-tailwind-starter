@@ -31,3 +31,7 @@ A complete authentication module is provided by this starter application, contai
 A Dashboard basic skeletton including `Sidebar`, `Navbar` and `Body`:
 
 ![Dashboard skeletton](_media/dashboard.png)
+
+## Profile
+
+![User profile](_media/profile.png)

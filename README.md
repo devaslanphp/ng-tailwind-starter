@@ -18,4 +18,5 @@ You can find a full documentation here: [Documentation](https://devaslanphp.gith
 <img src="github-contents/recover-password.png" width="20%"></img> 
 <img src="github-contents/verify.png" width="20%"></img> 
 <img src="github-contents/dashboard.png" width="20%"></img> 
+<img src="github-contents/profile.png" width="20%"></img> 
 

@@ -10,3 +10,4 @@
     - [Recover password](/pages?id=recover-password)
     - [Verify account](/pages?id=verify-account)
   - [Dashboard](/pages?id=dashboard)
+  - [User profile](/pages?id=profile)
