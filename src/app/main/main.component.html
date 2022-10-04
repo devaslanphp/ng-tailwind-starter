@@ -2,7 +2,7 @@
     <app-sidebar></app-sidebar>
 
     <div class="w-full flex flex-col justify-start items-start lg:pl-64">
-        <div class="w-full bg-white border-b border-gray-200 flex justify-end items-center space-x-3 px-5 py-3">
+        <div class="w-full bg-white border-b border-gray-200 lg:flex hidden justify-end items-center space-x-3 px-5 py-3">
             <button type="button" class="flex items-center space-x-2" (click)="toggleUserMenu()">
                 <img id="avatarButton" class="w-10 h-10 rounded-full cursor-pointer"
                 src="https://ui-avatars.com/api/?name=John+Doe&color=FFFFFF&background=56bdc8" alt="User dropdown" />
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="w-full p-5">
+        <div class="w-full overflow-x-hidden overflow-y-auto">
             <router-outlet></router-outlet>
         </div>
     </div>

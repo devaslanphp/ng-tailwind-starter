@@ -12,10 +12,10 @@
                 [ngClass]="{'text-red-500': !form.controls['name'].pristine && !form.controls['name'].valid}">
                 Full name
             </label>
-            <span class="text-xs text-red-500" *ngIf="!form.controls['email'].pristine && form.controls['email'].hasError('required')">
+            <span class="text-xs text-red-500" *ngIf="!form.controls['name'].pristine && form.controls['name'].hasError('required')">
                 <fa-icon [icon]="faTriangleExclamation"></fa-icon> The full name field is required
             </span>
-            <span class="text-xs text-red-500" *ngIf="!form.controls['email'].pristine && form.controls['email'].hasError('maxLength')">
+            <span class="text-xs text-red-500" *ngIf="!form.controls['name'].pristine && form.controls['name'].hasError('maxLength')">
                 <fa-icon [icon]="faTriangleExclamation"></fa-icon> The full name field must not exceed 255 characters
             </span>
         </div>

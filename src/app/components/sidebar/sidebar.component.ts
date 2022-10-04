@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faBars, faTimes, faHome, faSignIn, faUserPlus, faLock, faLockOpen, faUserCheck } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars, faTimes, faHome, faSignIn, faUserPlus,
+  faLock, faLockOpen, faUserCheck, faUser,
+  faDashboard, faSignOut
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,6 +12,7 @@ import { faBars, faTimes, faHome, faSignIn, faUserPlus, faLock, faLockOpen, faUs
 })
 export class SidebarComponent implements OnInit {
 
+  showUserMenu: boolean;
   collapseShow = "hidden";
   faBars = faBars;
   faTimes = faTimes;
@@ -17,14 +22,23 @@ export class SidebarComponent implements OnInit {
   faLock = faLock;
   faLockOpen = faLockOpen;
   faUserCheck = faUserCheck;
+  faUser = faUser;
+  faDashboard = faDashboard;
+  faSignOut = faSignOut;
 
-  constructor() { }
+  constructor() {
+    this.showUserMenu = false;
+  }
 
   ngOnInit() {
   }
 
   toggleCollapseShow(classes: any) {
     this.collapseShow = classes;
+  }
+
+  toggleUserMenu() {
+    this.showUserMenu = !this.showUserMenu;
   }
 
 }
