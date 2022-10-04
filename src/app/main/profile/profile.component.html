@@ -16,14 +16,15 @@
         </p>
         <form [formGroup]="form" class="lg:w-3/6 w-full">
             <div class="relative z-0 mb-6 w-full group">
-                <input type="text" name="name" id="name" formControlName="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                <label for="name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                <input type="text" name="name" id="name" formControlName="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " [ngClass]="{'border-red-500': !form.controls['name'].pristine && !form.controls['name'].valid}" />
+                <label for="name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                [ngClass]="{'text-red-500': !form.controls['name'].pristine && !form.controls['name'].valid}">
                     Full name
                 </label>
                 <span class="text-xs text-red-500" *ngIf="!form.controls['name'].pristine && form.controls['name'].hasError('required')">
                     <fa-icon [icon]="faTriangleExclamation"></fa-icon> The full name field is required
                 </span>
-                <span class="text-xs text-red-500" *ngIf="!form.controls['name'].pristine && form.controls['name'].hasError('maxLength')">
+                <span class="text-xs text-red-500" *ngIf="!form.controls['name'].pristine && form.controls['name'].hasError('maxlength')">
                     <fa-icon [icon]="faTriangleExclamation"></fa-icon> The full name field must not exceed 255 characters
                 </span>
             </div>
